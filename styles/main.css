@@ -2,7 +2,7 @@
 {text-align:center;}
 
 .hidden{visibility:hidden;}
-
+/*--------------------------------------------*/
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -41,10 +41,11 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-
+/*--------------------------------------------*/
 .sticky/*粘性定位*/
 {top:0;
 list-style-type: none;
+display:inline-block;
 position:sticky;
 position: -webkit-sticky; /* Safari */
 margin:0;
@@ -56,6 +57,45 @@ text-align:center;}
 
 
 
+/*------------------提示工具------------------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #ffccdd;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+	opacity: 0;
+    transition: opacity .5s;/*淡入淡出*/
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ffccdd  transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+	opacity: 1;
+}
+/*--------------------------------------------*/
 
 
 
