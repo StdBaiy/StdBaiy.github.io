@@ -42,12 +42,18 @@
     background-color: #3e8e41;
 }
 
-.sticky
+.sticky/*粘性定位*/
 {top:0;
 list-style-type: none;
 position:sticky;
+position: -webkit-sticky; /* Safari */
 margin:0;
 padding:0;}
+
+.description
+{padding:20px;
+text-align:center;}
+
 
 
 
