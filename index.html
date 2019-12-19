@@ -32,23 +32,23 @@
 <div class="tooltiptext"><p>但并非不可跨越</p></div>
 </div>
 
-<form>
-<fieldset>
-<legend>告诉我你是谁</legend>
-姓名:<input type="text"><br>
-年龄:<input type="text"><br>
-职业:<input type="text"><br>
-生日:<input type="date" max="2001-01-01" min="1960-01-01"><br>
+<form id="list">
+<label for="name"><p>Name</p></label>
+<input type="text" id="name" placeholder="雨涵"><br>
+<label for="age"><p>Age</p></label>
+<input type="text" id="age" placeholder="19"><br>
+<label for="job"><p>Job</p></label>
+<input type="text" id="job" placeholder="my lover"><br>
+Birthday<input type="date" max="2001-01-01" min="1960-01-01" value="2000-10-07"><br>
 你爱我吗?:<br><label for="love">爱!</label>
   <input type="radio" name="choose" id="love" value="love"><br>
   <label for="suplove">超爱</label>
   <input type="radio" name="choose" id="suplove" value="suplove"><br><br>
-<input type="submit">
-</fieldset>
+<input type="submit" value="好啦">
 </form>
 
 
-<div class="dropdown">
+<div id="bigcat" class="dropdown">
   <img src="images/bigcat.jpg" alt="喵~" width="108" height="192">
   <div class="dropdown-content">
     <img src="images/bigcat.jpg" alt="嗷呜~" width="540" height="960">
@@ -59,7 +59,7 @@
 <hr>
 
 <div class="topmenu sticky dropdown">
-<button class="dropbtn">工具箱</button>
+<div id="toolbox" class="dropbtn">工具箱</div>
 <div class="dropdown-content">
 <a href="#h_1">随便写点</a>
 <a href="#h_2">照相馆</a>
