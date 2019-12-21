@@ -13,8 +13,20 @@
 <!--<script type="text/javascript" src="scripts/login_app.js"></script>-->
 <body>
 
-<div class="demo">
+<div class="demo" >
 
+<script type="text/javascript">
+function changeColor(color)
+{
+	var x=document.getElementById('choose');
+	x.style.background=color;
+}
+function closeChange()
+{
+	var x=document.getElementById('choose');
+	x.style.visibility='hidden';
+}
+</script>
 
 <div class="header">
 <!--<h1 id="head">在这里根据时间变化为上下午/早晚上好--><details><summary>今天想做什么呢</summary>
@@ -23,10 +35,16 @@
 
 <hr>
 
-施工进度:<progress value="8" max="100"></progress>
+施工进度:<progress value="9" max="100"></progress>
 
 <hr>
-
+<div class="change" id="choose">
+<input  type="button" onclick="changeColor('red')" value="红色"></input>
+<input type="button" onclick="changeColor('yellow')" value="黄色"></input>
+<input type="button" onclick="changeColor('green')" value="绿色"></input>
+<input type="button" onclick="closeChange()" value="算了,花花绿绿的"></input>
+</div>
+<br>
 <div class="tooltip">
 <span>时间是洪水猛兽</sapn>
 <div class="tooltiptext"><p>但并非不可跨越</p></div>
@@ -116,7 +134,7 @@ function play_music()
 <p class="hidden">如果你能看见这段话,我要说,我真的好爱你</p>
 
 <address >
-<p ><strong><small>Designed by Monkey in 24/11/2019 on Github</samll></strong></p>
+<p ><strong><i><small>Designed by Monkey in 24/11/2019 on Github</samll></i></strong></p>
 </address>
 
 </div>
